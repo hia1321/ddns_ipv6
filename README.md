@@ -25,3 +25,16 @@
 ```bash
 # 确保已安装宝塔面板和Python项目管理器
 # 在Python项目管理器中安装Python 3.8+版本
+
+
+下载脚本
+
+```bash
+cd /www
+git clone https://github.com/hia1321/ddns_ipv6.git
+cd ddns_ipv6
+
+# 通过Python项目管理器安装requests模块
+/www/server/python_manager/versions/3.12.0/bin/pip3 install requests
+# 或使用清华镜像加速
+/www/server/python_manager/versions/3.12.0/bin/pip3 install requests -i https://pypi.tuna.tsinghua.edu.cn/simple
