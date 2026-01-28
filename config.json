@@ -1,0 +1,56 @@
+{
+  "access_key_id": "AAAAAAA",
+  "access_key_secret": "AAAAAAA",
+  "main_domain": "example.cn",
+  "sub_domains": [
+    {
+      "name": "@",
+      "enabled": true,
+      "record_type": "AAAA",
+      "comment": "根域名"
+    },
+    {
+      "name": "www",
+      "enabled": true,
+      "record_type": "AAAA",
+      "comment": "www子域名"
+    },
+    {
+      "name": "mybt",
+      "enabled": true,
+      "record_type": "AAAA",
+      "comment": "宝塔"
+    }
+  ],
+  "ip_detection": {
+    "check_interval": 300,
+    "ipv6_enabled": true,
+    "ipv4_enabled": false
+  },
+  "dns_check": {
+    "enabled": true,
+    "dns_servers": [
+      "8.8.8.8",
+      "223.5.5.5",
+      "119.29.29.29"
+    ],
+    "timeout": 30
+  },
+  "service_restart": {
+    "enabled": true,
+    "services": [
+      "nginx",
+      "bt"
+    ],
+    "delay": 10
+  },
+  "cache": {
+    "enabled": true,
+    "cached_ip": "2409:8a45:34a0:de90::b76",
+    "cache_timestamp": 1769612807
+  },
+  "logging": {
+    "log_file": "./logs/ddns.log",
+    "max_log_days": 30
+  }
+}
