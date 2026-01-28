@@ -43,9 +43,9 @@
 
 
 ## 4. 编辑 config.json 文件
-  - "access_key_id": "LTAI5tYourActualAccessKeyID",     **替换为您的阿里云AccessKey ID**
-  - "access_key_secret": "YourActualAccessKeySecret",   **替换为您的阿里云AccessKey Secret**
-  - "main_domain": "yourdomain.com",                    **替换为您的域名**
+  - **替换为您的阿里云AccessKey ID**  "access_key_id": "LTAI5tYourActualAccessKeyID",     
+  - **替换为您的阿里云AccessKey Secret**  "access_key_secret": "YourActualAccessKeySecret",   
+  - **替换为您的域名**  "main_domain": "yourdomain.com",                    
   - **要解析的域名**
   
 
