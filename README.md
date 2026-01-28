@@ -22,19 +22,45 @@
 ## 🚀 快速开始
 
 ### 1. 环境准备
-```bash
+
 # 确保已安装宝塔面板和Python项目管理器
 # 在Python项目管理器中安装Python 3.8+版本
+# 登录宝塔面板
+# 进入"软件商店"
+# 搜索"Python项目管理器"
+# 安装并启动
+# 在Python项目管理器中安装Python 3.8+版本
+
+### 2. 下载脚本
 
 
-下载脚本
-
-```bash
 cd /www
 git clone https://github.com/hia1321/ddns_ipv6.git
 cd ddns_ipv6
 
-# 通过Python项目管理器安装requests模块
-/www/server/python_manager/versions/3.12.0/bin/pip3 install requests
-# 或使用清华镜像加速
+### 3. 通过Python项目管理器安装requests模块并使用清华镜像加速
 /www/server/python_manager/versions/3.12.0/bin/pip3 install requests -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+### 4. 编辑 config.json 文件
+
+  "access_key_id": "LTAI5tYourActualAccessKeyID",      // 替换为您的阿里云AccessKey ID
+  "access_key_secret": "YourActualAccessKeySecret",    // 替换为您的阿里云AccessKey Secret
+  "main_domain": "yourdomain.com",                    // 替换为您的域名
+  
+
+### 5. 权限设置
+
+chmod +x run.sh
+chmod +x install_check.sh
+
+### 6. 环境检查
+
+./install_check.sh
+
+### 7. 手动测试运行
+
+./run.sh
+
+
+
